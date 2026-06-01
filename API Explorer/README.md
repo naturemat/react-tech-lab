@@ -1,14 +1,23 @@
 # API Explorer
 
-Educational project that fetches a single todo from the [JSONPlaceholder](https://jsonplaceholder.typicode.com) public API and displays it. The focus is learning how TanStack Router and TanStack Query work together in a React + Vite + TypeScript app.
+Educational project that explores key features of TanStack Router and TanStack Query using the [JSONPlaceholder](https://jsonplaceholder.typicode.com) public API in a React + Vite + TypeScript app.
+
+## Features
+
+- **Navigation** — multi-page routing with TanStack Router (Home, Fetch Todo, Create Todo)
+- **Search parameters** — select which todo to fetch via URL query string (`/todo?id=N`)
+- **Data fetching** — TanStack Query `useQuery` for GET requests with loading/error states
+- **Mutation** — TanStack Query `useMutation` for POST requests (create a new todo)
+- **Cache inspection** — view cached query data directly in the UI and via React Query DevTools
 
 ## Technology Stack
 
-- [React](https://react.dev) - UI library
-- [Vite](https://vite.dev) - Build tool
-- [TypeScript](https://www.typescriptlang.org) - Type safety
-- [TanStack Router](https://tanstack.com/router) - Type-safe routing
-- [TanStack Query](https://tanstack.com/query) - Server state management (handles loading and error states)
+- [React](https://react.dev) — UI library
+- [Vite](https://vite.dev) — Build tool
+- [TypeScript](https://www.typescriptlang.org) — Type safety
+- [TanStack Router](https://tanstack.com/router) — Type-safe routing with search parameters
+- [TanStack Query](https://tanstack.com/query) — Server state management (fetching, caching, mutations)
+- [TanStack Query DevTools](https://tanstack.com/query/latest/docs/react/devtools) — Cache inspector
 
 ## How to run
 

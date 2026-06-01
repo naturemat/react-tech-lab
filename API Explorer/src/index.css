@@ -31,15 +31,27 @@ body {
   padding-bottom: 1rem;
 }
 
-.app-header h1 {
+.app-logo {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-logo h1 {
   margin: 0;
   font-size: 2rem;
   color: #333;
 }
 
-nav {
+.app-header nav {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .nav-link {
@@ -53,6 +65,11 @@ nav {
   text-decoration: underline;
 }
 
+.nav-link.disabled {
+  color: #aaa;
+  pointer-events: none;
+}
+
 .loading-message {
   font-style: italic;
   color: #666;
@@ -63,6 +80,12 @@ nav {
   font-weight: bold;
 }
 
+.todo-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .todo-card {
   background: white;
   border: 1px solid #ddd;
@@ -71,13 +94,118 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.todo-card h2 {
+.todo-card h2,
+.todo-card h3 {
   margin-top: 0;
   color: #333;
 }
 
 .todo-card p {
   margin: 0.5rem 0;
+}
+
+.cache-indicator {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.todo-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.todo-counter {
+  font-weight: bold;
+  color: #333;
+}
+
+.cache-inspector {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.cache-inspector summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+.cache-inspector ul {
+  padding-left: 1rem;
+}
+
+.cache-inspector li {
+  margin: 0.5rem 0;
+}
+
+.cache-inspector pre {
+  background: #f4f4f4;
+  border-radius: 4px;
+  padding: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+}
+
+.create-todo-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.create-todo-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-weight: 500;
+}
+
+.create-todo-form input[type="text"],
+.create-todo-form input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.5rem !important;
+}
+
+.create-todo-form button {
+  padding: 0.75rem 1.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.create-todo-form button:hover {
+  background: #535bf2;
+}
+
+.create-todo-form button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
 }
 
 .home-page ul {

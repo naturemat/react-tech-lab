@@ -5,14 +5,16 @@ export default function HomePage() {
     <section className="home-page">
       <h2>Welcome to API Explorer</h2>
       <p>
-        This project demonstrates how to fetch data from a public API and
-        display it in a React app using TanStack Router and TanStack Query.
+        This project demonstrates key features of TanStack Router and TanStack Query
+        by interacting with the JSONPlaceholder public API.
       </p>
+      <h3>Features demonstrated</h3>
       <ul>
-        <li><strong>TanStack Router</strong> handles navigation between pages.</li>
-        <li><strong>TanStack Query</strong> handles data fetching, loading, and error states.</li>
+        <li><strong>TanStack Router</strong> — multi-page navigation with search parameters (<code>?id=N</code>)</li>
+        <li><strong>TanStack Query</strong> — data fetching with loading/error states</li>
+        <li><strong>Cache inspection</strong> — view cached query data directly in the UI</li>
+        <li><strong>Mutation</strong> — create new resources via POST requests</li>
       </ul>
-      <Link to="/todo" className="nav-link">View a fetched todo</Link>
     </section>
   )
 }
