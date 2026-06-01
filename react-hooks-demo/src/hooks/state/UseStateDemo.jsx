@@ -5,9 +5,9 @@ export default function UseStateDemo() {
 
   return (
     <>
-      <h2>Contador: {count}</h2>
+      <h2>Counter: {count}</h2>
 
-      <button onClick={() => setCount(count + 1)}>Incrementar</button>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
     </>
   );
 }

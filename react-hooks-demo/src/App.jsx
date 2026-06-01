@@ -29,7 +29,7 @@ function App() {
 
       <hr />
 
-      {selectedItem ? <selectedItem.Component /> : <h2>Selecciona un Hook</h2>}
+      {selectedItem ? <selectedItem.Component /> : <h2>Select a Hook</h2>}
     </>
   );
 }

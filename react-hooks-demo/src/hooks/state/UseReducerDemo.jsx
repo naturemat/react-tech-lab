@@ -18,11 +18,9 @@ export default function UseReducerDemo() {
     <>
       <h2>{count}</h2>
 
-      <button onClick={() => dispatch({ type: "increment" })}>
-        Incrementar
-      </button>
+      <button onClick={() => dispatch({ type: "increment" })}>Increment</button>
 
-      <button onClick={() => dispatch({ type: "reset" })}>Reiniciar</button>
+      <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
     </>
   );
 }

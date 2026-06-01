@@ -11,7 +11,7 @@ export default function Demo() {
     <form action={action}>
       <p>{count}</p>
 
-      <button>Incrementar</button>
+      <button>Increment</button>
     </form>
   );
 }
