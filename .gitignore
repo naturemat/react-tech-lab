@@ -12,7 +12,7 @@ build/
 *.tsbuildinfo
 **/*.tsbuildinfo
 # Excluir específicamente el proyecto 2 del monorrepo
-apps/proyecto2/
+apps/proyecto1/
 # Turborepo
 .turbo/
 
