@@ -1,57 +1,57 @@
-# Tarea Grupal - Monorepositorio Turborepo
+# Group Task - Turborepo Monorepository
 
-Monorepositorio con dos aplicaciones React en TypeScript.
+Monorepository with two React applications in TypeScript.
 
-> Documentación detallada de carpetas, archivos, librerías de frontend e instalación: **[DOCUMENTACION.md](./DOCUMENTACION.md)**
+> Detailed documentation of folders, files, frontend libraries and installation: **[DOCUMENTACION.md](./DOCUMENTACION.md)**
 
-## Estructura
+## Structure
 
 ```
-tarea_grupal/
+group_task/
 ├── apps/
-│   ├── proyecto1/     # Gestión de usuarios (Chakra, MobX, RHF, Zod)
-│   └── proyecto2/     # Testing showcase (Jest, RTL, Cypress)
+│ ├── project1/ # User management (Chakra, MobX, RHF, Zod)
+│ └── project2/ # Testing showcase (Jest, RTL, Cypress)
 ├── packages/
-│   ├── ui/
-│   └── typescript-config/
+│ ├── ui/
+│ └── typescript-config/
 ├── turbo.json
 └── package.json
 ```
 
-## Instalación
+## Facility
 
-Desde la raíz del monorepo:
+From the monorepo root:
 
 ```bash
 npm install
 ```
 
-## Comandos
+## Commands
 
-| Comando | Descripción |
+| Command | Description |
 |---------|-------------|
-| `npm run dev` | Inicia ambos proyectos en desarrollo |
-| `npm run build` | Compila todos los paquetes |
-| `npm run test` | Ejecuta tests de Jest (proyecto2) |
-| `npm run test:e2e` | Ejecuta Cypress E2E (proyecto2) |
+| `npm run dev` | Starts both projects in development |
+| `npm run build` | Compile all packages |
+| `npm run test` | Run Jest tests (project2) |
+| `npm run test:e2e` | Run Cypress E2E (project2) |
 
-### Por proyecto
+### By project
 
-**Proyecto 1** (`apps/proyecto1`):
-
-```bash
-npm run dev --workspace=proyecto1
-```
-
-**Proyecto 2** (`apps/proyecto2`):
+**Project 1** (`apps/project1`):
 
 ```bash
-npm run dev --workspace=proyecto2
-npm run test --workspace=proyecto2
-npm run test:e2e --workspace=proyecto2
+npm run dev --workspace=project1
 ```
 
-## Puertos
+**Project 2** (`apps/project2`):
 
-- Proyecto 1: http://localhost:5173
-- Proyecto 2: http://localhost:5174
+```bash
+npm run dev --workspace=project2
+npm run test --workspace=project2
+npm run test:e2e --workspace=project2
+```
+
+## Ports
+
+- Project 1: http://localhost:5173
+- Project 2: http://localhost:5174
